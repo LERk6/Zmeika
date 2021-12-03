@@ -1,3 +1,11 @@
+# Define default C compiler
+CC ?= gcc
+
 win:
-		gcc ./main.c -o ZMEIKA.exe
+		$(CC) ./main.c -o ZMEIKA.exe
 		./ZMEIKA.exe
+		rm ./ZMEIKA.exe
+linux:
+	$(CC) ./main.c -o ZMEIKA
+	./ZMEIKA
+	rm ./ZMEIKA
