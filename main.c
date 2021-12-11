@@ -10,8 +10,8 @@ int main()
     SetConsoleOutputCP(CP_UTF8);
     srand(time(NULL));
 
-    int width = 23, //ширина карты
-        height = 23; //высота карты
+    int width = 20, //ширина карты
+        height = 20; //высота карты
     char mapArray[height][width],   //карта
          u = ' '; //выход
 
@@ -84,7 +84,6 @@ int main()
             
         }
     }
-
 
     return 0;
 }
